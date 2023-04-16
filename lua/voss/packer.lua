@@ -1,18 +1,30 @@
 -- Packer Config
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use { 'nvim-telescope/telescope.nvim', tag = '0.1.1',
-        requires = { { 'nvim-lua/plenary.nvim' } }
-    }
-    use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
 
-    use { "catppuccin/nvim", as = "catppuccin" }
+    use { "EdenEast/nightfox.nvim", as = "nightfox" }
+
+    use {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.1',
+        requires = {
+            { 'nvim-lua/plenary.nvim' },
+            { 'BurntSushi/ripgrep' },
+        }
+    }
+
+    use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }) -- Theme
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
     use('nvim-treesitter/playground')
+
     use('ThePrimeagen/harpoon')
+    use('ThePrimeagen/refactoring.nvim')
+
     use('mbbill/undotree')
-    use('tpope/vim-fugitive')
+
+    use { 'tpope/vim-fugitive', as = 'fugitive' }
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -36,7 +48,9 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' },
         }
     }
+
     use("github/copilot.vim")
+
     use {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
@@ -46,9 +60,9 @@ return require('packer').startup(function(use)
             "MunifTanjim/nui.nvim",
         }
     }
+
     use("preservim/tagbar")
     use("tpope/vim-commentary")
-
     use 'nvim-tree/nvim-web-devicons'
     use { 'romgrk/barbar.nvim', requires = 'nvim-web-devicons' }
 
@@ -59,4 +73,8 @@ return require('packer').startup(function(use)
             vim.o.timeoutlen = 300
         end
     }
+
+    use("sudormrfbin/cheatsheet.nvim")
+    use("nvim-lualine/lualine.nvim")
+    use("lewis6991/gitsigns.nvim")
 end)

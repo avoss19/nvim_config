@@ -84,10 +84,10 @@ _G.packer_plugins = {
     path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
-  catppuccin = {
+  ["cheatsheet.nvim"] = {
     loaded = true,
-    path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
+    path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim",
+    url = "https://github.com/sudormrfbin/cheatsheet.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -124,6 +124,16 @@ _G.packer_plugins = {
     path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  fugitive = {
+    loaded = true,
+    path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -133,6 +143,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -148,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
+  nightfox = {
+    loaded = true,
+    path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/nightfox",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -189,6 +209,16 @@ _G.packer_plugins = {
     path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["refactoring.nvim"] = {
+    loaded = true,
+    path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
+    url = "https://github.com/ThePrimeagen/refactoring.nvim"
+  },
+  ripgrep = {
+    loaded = true,
+    path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
+  },
   tagbar = {
     loaded = true,
     path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/tagbar",
@@ -213,11 +243,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
-  },
-  ["vim-fugitive"] = {
-    loaded = true,
-    path = "/home/sivoss/.local/share/nvim/site/pack/packer/start/vim-fugitive",
-    url = "https://github.com/tpope/vim-fugitive"
   },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\nD\0\0\2\0\4\0\t6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0K\0\1\0\15timeoutlen\ftimeout\6o\bvim\0" },

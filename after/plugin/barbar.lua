@@ -17,4 +17,3 @@ map('n', '<C-0>', '<Cmd>BufferLast<CR>', opts);
 map('n', '<TAB>', '<Cmd>BufferNext<CR>', opts);
 map('n', '<S-TAB>', '<Cmd>BufferPrevious<CR>', opts);
 map('n', '<C-c>', '<Cmd>BufferClose<CR>', opts);
-
