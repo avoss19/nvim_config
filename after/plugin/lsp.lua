@@ -75,6 +75,15 @@ lsp.set_preferences({
 -- Autoformat
 local augroup = vim.api.nvim_create_augroup('LspFormatting', {})
 local lsp_format_on_save = function(bufnr)
+    -- Expand tabs to spaces
+    vim.api.nvim_buf_set_option(bufnr, 'expandtab', true)
+
+    -- Remove trailing spaces
+    vim.api.nvim_buf_set_option(bufnr, 'fixendofline', true)
+
+    -- Remove trailing newlines
+    vim.api.nvim_buf_set_option(bufnr, 'fixeol', true)
+
     vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
     vim.api.nvim_create_autocmd('BufWritePre', {
         group = augroup,
@@ -102,7 +111,7 @@ end
 lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
 
-    lsp_format_on_save(bufnr)
+    -- lsp_format_on_save(bufnr)
     -- ommisharp_token_modifiers_fix(client)
 
     if client.name == "omnisharp" then

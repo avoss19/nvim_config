@@ -62,7 +62,11 @@ return require('packer').startup(function(use)
     }
 
     use("preservim/tagbar")
+
     use("tpope/vim-commentary")
+    -- use("tpope/vim-surround")
+    use("tpope/vim-dadbod")
+
     use 'nvim-tree/nvim-web-devicons'
     use { 'romgrk/barbar.nvim', requires = 'nvim-web-devicons' }
 
@@ -77,4 +81,5 @@ return require('packer').startup(function(use)
     use("sudormrfbin/cheatsheet.nvim")
     use("nvim-lualine/lualine.nvim")
     use("lewis6991/gitsigns.nvim")
+    use("gelguy/wilder.nvim")
 end)
