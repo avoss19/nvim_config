@@ -31,3 +31,10 @@ vim.keymap.set('n', '<S-l>', ':vertical resize +2<CR>')
 -- Open splits
 vim.keymap.set('n', '<leader>sh', vim.cmd.split)
 vim.keymap.set('n', '<leader>sv', vim.cmd.vsplit)
+
+-- Page up and down
+-- vim.keymap.set('n', '<C-j>', '10<C-e>')
+-- vim.keymap.set('n', '<C-k>', '10<C-y>')
+
+-- Reload Config 
+-- vim.api.nvim_set_keymap('n', '<C-l>', '<cmd>lua reload_nvim_conf()<CR>', { noremap = true, silent = true })
